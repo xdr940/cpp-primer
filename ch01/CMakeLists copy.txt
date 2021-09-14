@@ -1,0 +1,25 @@
+cmake_minimum_required( VERSION 2.8 )
+project( ch01 )
+
+# 添加c++ 11标准支持
+set( CMAKE_CXX_FLAGS "-std=c++11" )
+
+
+# 添加头文件
+
+set(SOURCES
+    src/add.cc
+    #src/add_item.cc
+    #src/item_io.cc
+    # src/avg_price.cc
+)
+
+add_executable(ch01 ${SOURCES})
+
+
+
+target_include_directories(ch01
+    PRIVATE 
+        ${PROJECT_SOURCE_DIR}/include
+)
+

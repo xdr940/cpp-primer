@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+            "label": "run",
+            "type": "shell",
+            "command": "",
+            "args": [
+                "--run",
+                "${relativeFile}"//have to be relative path
+                // "${file}"
+            ],
+            "problemMatcher": [],
+            "group": "build"
+        },
+	]
+}
